@@ -1,0 +1,29 @@
+<div *ngIf="counter > 1; else load">
+    <app-navbar></app-navbar>
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <app-about></app-about>
+        <!-- Menu Section -->
+        <app-menu></app-menu>
+
+        <!-- Contact Section -->
+        <app-contact></app-contact>
+
+        <!-- End page content -->
+    </div>
+    <app-card></app-card>
+    <app-table></app-table>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</div>
+
+<ng-template #load>
+    <img style="height:100dvh;width: 100dvw;" src="../assets/images/Loading.gif"
+        alt="imagine a gif of homer simpson going in bush meme">
+</ng-template>
